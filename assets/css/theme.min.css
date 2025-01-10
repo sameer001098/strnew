@@ -27044,5 +27044,12 @@ a.fc-event:hover {
    box-shadow: 5px 5px 25px 0px rgba(27, 27, 27, 0.25);
 
 }
-
-
+.bgshapetwo{
+    background: url(/strassets/shapetwo.png);
+}
+.shapeheight{
+    max-height: 450px;
+}
+.shapeoneheight{
+    max-height: 350px;
+}
