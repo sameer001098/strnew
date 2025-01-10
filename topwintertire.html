@@ -30,98 +30,157 @@
 <body class="">
     <nav class="navbar navbar-expand-lg py-0">
         <div class="container px-0">
-            <a class="navbar-brand py-2 py-md-3 "><img src="strassets/logo.png" class="headerlogo" alt="Geeks" /></a>
-            <div class="d-flex align-items-center order-lg-3 ms-lg-3">
-                <div class="d-flex align-items-center">
-                 
-                    <li class="dropdown d-flex">
+            <!-- Logo Section -->
+            <a class="navbar-brand py-2 py-md-3" href="#">
+                <img src="strassets/logo.png" class="headerlogo" alt="Geeks" />
+            </a>
+    
+            <!-- Mobile Toggler Button (only visible on small screens) -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links (Visible on large screens and above) -->
+            <div class="d-flex align-items-center order-lg-3 ms-lg-3 d-none "> 
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2 my-auto">
+                        <a class="nav-link fw-semibold headernavlink" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-2 my-auto dropdown">
+                        <a class="nav-link dropdown-toggle headernavlink fw-semibold" href="searchtire.html" id="navbarListing" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tire
+                            <svg width="18" height="10" class="ps-2" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.91699 1.1665L9.00033 8.24984L16.0837 1.1665" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarListing">
+                            <li><a class="dropdown-item fw-semibold" href="searchtire.html">New Tire</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="findtirewheel.html">Used Tire</a></li>
+                            <li><a class="dropdown-item" href="wintertire.html">Winter Tire</a></li>
+                            <li><a class="dropdown-item" href="allsessionwintertire.html">All Session Winter Tire</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-2 my-auto">
+                        <a class="nav-link fw-semibold headernavlink" href="findtire.html">Wheel</a>
+                    </li>
+                    <li class="nav-item px-2 my-auto">
+                        <a class="nav-link fw-semibold headernavlink" href="discount.html">Extra</a>
+                    </li>
+                    <li class="nav-item px-2 my-auto dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold headernavlink" href="#" id="navbarServices" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services
+                            <svg width="18" height="10" class="ps-2" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.91699 1.1665L9.00033 8.24984L16.0837 1.1665" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarServices">
+                            <li><a class="dropdown-item" href="service9.html">Tire Repair and Maintenance</a></li>
+                            <li><a class="dropdown-item" href="service8.html">Tire Repair and Installation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-2 my-auto">
+                        <a class="nav-link headernavlink fw-semibold" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item px-2 my-auto">
+                        <a class="nav-link headernavlink fw-semibold" href="contactus.html">Contact Us</a>
+                    </li>
+    
+                    <!-- User Avatar Dropdown (Only visible on large screens) -->
+                    <li class="dropdown d-none d-lg-flex">
                         <a class="nav-link d-flex flex-row dropdown-toggle arrow-none nav-user px-2" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                             <span class="account-user-avatar">
                                 <svg width="44" height="44" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M32.7514 34.9823L31.7266 36.0612C31.7266 36.0612 29.2907 38.6257 22.642 31.6258C15.9933 24.6258 18.4291 22.0614 18.4291 22.0614L19.0744 21.382C20.6642 19.7083 20.814 17.0212 19.427 15.0595L16.5898 11.0466C14.8731 8.61862 11.5559 8.29789 9.58826 10.3694L6.05666 14.0876C5.08101 15.1147 4.42721 16.4463 4.5065 17.9234C4.70934 21.7023 6.32409 29.8328 15.3346 39.3192C24.8897 49.379 33.8553 49.7788 37.5217 49.417C38.6813 49.3025 39.6898 48.6772 40.5025 47.8215L43.6988 44.4564C45.8563 42.185 45.2479 38.291 42.4874 36.702L38.1888 34.2277C36.3762 33.1844 34.168 33.4908 32.7514 34.9823Z" fill="#1B1B1B"/>
                                     <path d="M38.25 27C44.4632 27 49.5 21.9632 49.5 15.75C49.5 9.53681 44.4632 4.5 38.25 4.5C32.0368 4.5 27 9.53681 27 15.75C27 17.5496 27.4225 19.2506 28.1738 20.759C28.3736 21.1599 28.44 21.6181 28.3244 22.0507L27.6543 24.5549C27.3634 25.6421 28.3579 26.6366 29.4451 26.3457L31.9493 25.6756C32.382 25.56 32.8401 25.6264 33.241 25.8262C34.7494 26.5774 36.4504 27 38.25 27Z" fill="#EF6D17"/>
-                                    </svg>
-                                    
-                            </span>
-                            <span class="d-lg-flex flex-column gap-1 d-none">
-                                <h6 class="my-0 fw-normal">In a Hurry?</h6>
-                                <h4 class="my-0">+1(825) 712-5006</h4>
-                                
+                                </svg>
                             </span>
                         </a>
-                      
                     </li>
-                </div>
-             
-            </div>
-            <!-- Button -->
-
-            <!-- Collapse -->
-            <div class="collapse navbar-collapse" id="navbar-default">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item px-2">
-                        <a class="nav-link fw-semibold headernavlink" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item px-2 dropdown">
-                        <a class="nav-link dropdown-toggle headernavlink fw-semibold" href="searchtire.html" id="navbarListing" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tire<svg width="18" height="10" class="ps-2" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.91699 1.1665L9.00033 8.24984L16.0837 1.1665" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                        <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarListing">
-                          
-                            <li>
-                                <a class="dropdown-item fw-semibold" href="searchtire.html">New Tire</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item fw-semibold" href="findtirewheel.html">Used Tire</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="wintertire.html">Winter Tire</a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="allsessionwintertire.html">All Session Winter Tire</a>
-                            </li>
-                           
-                        </ul>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link fw-semibold headernavlink" href="findtire.html">wheel</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link fw-semibold headernavlink" href="discount.html">Extra</a>
-                    </li>
-                   
-                    <li class="nav-item px-2 dropdown">
-                        <a class="nav-link dropdown-toggle fw-semibold headernavlink" href="#" id="navbarListing" data-bs-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Services<svg width="18" height="10" class="ps-2" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.91699 1.1665L9.00033 8.24984L16.0837 1.1665" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                        <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarListing">
-                         
-                           
-                            <li>
-                                <a class="dropdown-item" href="service9.html">Tire Repair and Maintenance</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="service8.html">Tire Repair and Installation</a>
-                            </li>
-                        
-                        </ul>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link headernavlink fw-semibold" href="aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link headernavlink fw-semibold" href="contactus.html">Contact Us</a>
-                    </li>
-
-                    
-                
                 </ul>
             </div>
-        </div>
-    </nav>
+    
+            <!-- Collapsed Navbar (only visible on mobile devices) -->
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <ul class="navbar-nav ms-auto">
+                        <li class="nav-item px-2 my-auto">
+                            <a class="nav-link fw-semibold headernavlink" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-2 my-auto dropdown">
+                            <a class="nav-link dropdown-toggle headernavlink fw-semibold" href="searchtire.html" id="navbarListing" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tire<svg width="18" height="10" class="ps-2" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.91699 1.1665L9.00033 8.24984L16.0837 1.1665" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </a>
+                            <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarListing">
+                              
+                                <li>
+                                    <a class="dropdown-item fw-semibold" href="searchtire.html">New Tire</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fw-semibold" href="findtirewheel.html">Used Tire</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="wintertire.html">Winter Tire</a>
+                                </li>
+    
+                                <li>
+                                    <a class="dropdown-item" href="allsessionwintertire.html">All Session Winter Tire</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2 my-auto">
+                            <a class="nav-link fw-semibold headernavlink" href="findtire.html">wheel</a>
+                        </li>
+                        <li class="nav-item px-2 my-auto">
+                            <a class="nav-link fw-semibold headernavlink" href="discount.html">Extra</a>
+                        </li>
+                       
+                        <li class="nav-item px-2 my-auto dropdown">
+                            <a class="nav-link dropdown-toggle fw-semibold headernavlink" href="#" id="navbarListing" data-bs-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Services<svg width="18" height="10" class="ps-2" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.91699 1.1665L9.00033 8.24984L16.0837 1.1665" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </a>
+                            <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarListing">
+                             
+                               
+                                <li>
+                                    <a class="dropdown-item" href="service9.html">Tire Repair and Maintenance</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="service8.html">Tire Repair and Installation</a>
+                                </li>
+                            
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2 my-auto">
+                            <a class="nav-link headernavlink fw-semibold" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item px-2 my-auto">
+                            <a class="nav-link headernavlink fw-semibold" href="contactus.html">Contact Us</a>
+                        </li>
+    
+                        <li class="dropdown d-flex d-none d-md-none d-lg-block d-xl-block"> 
+                            <a class="nav-link d-flex flex-row dropdown-toggle arrow-none nav-user px-2" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <span class="account-user-avatar">
+                                    <svg width="44" height="44" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.7514 34.9823L31.7266 36.0612C31.7266 36.0612 29.2907 38.6257 22.642 31.6258C15.9933 24.6258 18.4291 22.0614 18.4291 22.0614L19.0744 21.382C20.6642 19.7083 20.814 17.0212 19.427 15.0595L16.5898 11.0466C14.8731 8.61862 11.5559 8.29789 9.58826 10.3694L6.05666 14.0876C5.08101 15.1147 4.42721 16.4463 4.5065 17.9234C4.70934 21.7023 6.32409 29.8328 15.3346 39.3192C24.8897 49.379 33.8553 49.7788 37.5217 49.417C38.6813 49.3025 39.6898 48.6772 40.5025 47.8215L43.6988 44.4564C45.8563 42.185 45.2479 38.291 42.4874 36.702L38.1888 34.2277C36.3762 33.1844 34.168 33.4908 32.7514 34.9823Z" fill="#1B1B1B"/>
+                                        <path d="M38.25 27C44.4632 27 49.5 21.9632 49.5 15.75C49.5 9.53681 44.4632 4.5 38.25 4.5C32.0368 4.5 27 9.53681 27 15.75C27 17.5496 27.4225 19.2506 28.1738 20.759C28.3736 21.1599 28.44 21.6181 28.3244 22.0507L27.6543 24.5549C27.3634 25.6421 28.3579 26.6366 29.4451 26.3457L31.9493 25.6756C32.382 25.56 32.8401 25.6264 33.241 25.8262C34.7494 26.5774 36.4504 27 38.25 27Z" fill="#EF6D17"/>
+                                        </svg>
+                                        
+                                </span>
+                                <span class="d-lg-flex flex-column gap-1 d-none">
+                                    <h6 class="my-0 fw-normal">In a Hurry?</h6>
+                                    <h4 class="my-0">+1(825) 712-5006</h4>
+                                    
+                                </span>
+                            </a>
+                          
+                        </li>
+    
+                        
+                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 
 
@@ -231,6 +290,9 @@
                             <li><a href="index.html" class="nav-link text-white py-2">Home</a></li>
                             <li><a href="aboutus.html" class="nav-link text-white py-2">About Us</a></li>
                             <li><a href="contactus.html" class="nav-link text-white py-2">Contact Us</a></li>
+                            <li><a href="Faqs.html" class="nav-link text-white py-2">FAQ'S</a></li>
+                            <li><a href="Termsconditions.html" class="nav-link text-white py-2">Terms & Conditions</a></li>
+                            <li><a href="wordprocess.html" class="nav-link text-white py-2">Work Process</a></li>
                             <li><a href="allsessionwintertire.html" class="nav-link text-white py-2">All Session Tire</a></li>
                             <!-- <li><a href="#" class="nav-link text-white py-2">Work Processes</a></li>
                             <li><a href="#" class="nav-link text-white py-2">FAQ</a></li> -->
