@@ -26987,6 +26987,12 @@ a.fc-event:hover {
          center; margin: auto; 
          align-items: center;
     }
+    .bannerheightdiscount{
+        min-height: 400px; 
+        display: flex; justify-content:
+         center; margin: auto; 
+         align-items: center;
+    }
     .m-h-300{
         min-height: 200px;
     }
@@ -27053,3 +27059,29 @@ a.fc-event:hover {
 .shapeoneheight{
     max-height: 350px;
 }
+@media (min-width:768px) AND (max-width : 1024px){
+    .bannerheightdiscount{
+        min-height: 450px; 
+        display: flex; justify-content:
+         center; margin: auto; 
+         align-items: center;
+    }
+}
+@media (min-width:1025px) AND (max-width : 1200px){
+    .bannerheightdiscount{
+        min-height:570px; 
+        display: flex; justify-content:
+         center; margin: auto; 
+         align-items: center;
+    }
+}
+@media (min-width:1200px) AND (max-width : 2500px){
+    .bannerheightdiscount{
+        min-height:850px; 
+        display: flex; justify-content:
+         center; margin: auto; 
+         align-items: center;
+    }
+}
+
+
