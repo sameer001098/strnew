@@ -60,6 +60,7 @@ h3 {
 }
 
 .display-1,
+.display-11,
 .display-2,
 .display-3,
 .display-4 {
@@ -966,10 +967,18 @@ progress {
     font-weight: 600;
     line-height: 1.2
 }
+.display-11 {
+    font-size: calc(1.575rem + 3.9vw);
+    font-weight: 600;
+    line-height: 1.2
+}
 
 @media (min-width:1200px) {
     .display-1 {
         font-size: 4.5rem
+    }
+    .display-1 {
+        font-size: 7.5rem
     }
 }
 
